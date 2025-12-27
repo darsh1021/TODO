@@ -1,0 +1,188 @@
+.userid-container {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.userid-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.userid-display {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.userid-label {
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.userid-value {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 8px 16px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-family: 'Courier New', monospace;
+  word-break: break-all;
+}
+
+.edit-userid-btn,
+.logout-btn {
+  margin-left: auto;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.edit-userid-btn {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.edit-userid-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.logout-btn {
+  background-color: #ff6b6b;
+  color: white;
+  border: 1px solid #ff5252;
+}
+
+.logout-btn:hover {
+  background-color: #ff5252;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+}
+
+.userid-input-section {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.userid-input-label {
+  display: block;
+  color: #333;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.userid-input-wrapper {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.userid-input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.userid-input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.userid-input::placeholder {
+  color: #999;
+}
+
+.submit-userid-btn {
+  padding: 12px 28px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.submit-userid-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.4);
+}
+
+.submit-userid-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.userid-hint {
+  color: #666;
+  font-size: 12px;
+  margin: 0;
+  opacity: 0.8;
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .userid-container {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  .userid-display {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .userid-value {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .edit-userid-btn,
+  .logout-btn {
+    margin-left: 0;
+    flex: 1;
+    min-width: 120px;
+  }
+
+  .userid-input-section {
+    padding: 16px;
+  }
+
+  .userid-input-wrapper {
+    flex-direction: column;
+  }
+
+  .submit-userid-btn {
+    width: 100%;
+  }
+}

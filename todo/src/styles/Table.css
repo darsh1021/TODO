@@ -1,0 +1,184 @@
+.table-container {
+  padding: 30px;
+  max-width: 100%;
+  overflow-x: auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.table-container h2 {
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 28px;
+  font-weight: 700;
+  border-bottom: 3px solid #667eea;
+  padding-bottom: 10px;
+}
+
+/* TABLE */
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+.task-table thead {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.task-table th {
+  padding: 16px 12px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.task-table th:first-child {
+  text-align: left;
+  min-width: 160px;
+}
+
+.task-table th:last-child {
+  min-width: 90px;
+}
+
+/* ROWS */
+.task-table tbody tr {
+  border-bottom: 1px solid #eee;
+  transition: all 0.25s ease;
+}
+
+.task-table tbody tr:nth-child(odd) {
+  background-color: #f9f9ff;
+}
+
+.task-table tbody tr:hover {
+  background-color: #f3f4ff;
+}
+
+/* CELLS */
+.task-table td {
+  padding: 12px;
+  text-align: center;
+  min-width: 45px;
+}
+
+.task-table td:first-child {
+  text-align: left;
+  min-width: 160px;
+}
+
+.task-table td:last-child {
+  min-width: 90px;
+}
+
+/* INPUT */
+.task-table input[type="text"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #f9f9ff;
+  transition: all 0.3s ease;
+}
+
+.task-table input[type="text"]:focus {
+  outline: none;
+  border-color: #667eea;
+  background-color: white;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.15);
+}
+
+/* CHECKBOX */
+.task-table input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #667eea;
+  transition: transform 0.2s ease;
+}
+
+.task-table input[type="checkbox"]:hover {
+  transform: scale(1.15);
+}
+
+/* DELETE BUTTON */
+.task-table button {
+  padding: 8px 14px;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.task-table button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(245, 87, 108, 0.4);
+}
+
+/* ADD ROW BUTTON */
+.add-row-btn {
+  margin-top: 20px;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.add-row-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+/* SCROLLBAR */
+.table-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.table-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  background: #667eea;
+  border-radius: 10px;
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+  background: #764ba2;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .table-container {
+    padding: 16px;
+  }
+
+  .table-container h2 {
+    font-size: 22px;
+  }
+
+  .task-table th,
+  .task-table td {
+    padding: 8px;
+    font-size: 11px;
+  }
+}
